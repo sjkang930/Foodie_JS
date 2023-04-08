@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+.name {
+    margin-top: -1.4em;
+    margin-left: 5.5em;
+}
+
+.chat-message {
+    width: max-content;
+    max-width: 50%;
+    background-color: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    /* margin: 0em 5em 0em 5em; */
+    display: block;
+    position: relative;
+    overflow-wrap: break-word;
+    /* left: -2em; */
+    font: 16px 'Nunito', sans-serif;   
+}
+
+.chat-message--user {
+    width: max-content;
+    background-color: #00BFB2;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    /* margin: 0em 5em 0em 5em; */
+    display: block;
+    position: relative;
+    /* left: 10em; */
+    color: white;
+    font: 16px 'Nunito', sans-serif;   
+}
+
+.chat-message-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5em;
+}
+
+.chat-message-container--user {
+    flex-direction: row-reverse;
+}
+
+.chatTitle {
+    /* margin-bottom: 1em; */
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.chat-messages {
+    min-width: 21em;
+    max-width: 21em;
+    padding: 0.5em 0em 0.5em 0em;
+    min-height: 29em;
+    max-height: 28em;
+    /* opacity: 10%; */
+    background-color: #00bfb225;
+    overflow-y: scroll;
+}
+
+.chat-input {
+    border-radius: 1em;
+    border: 1px solid #c4c4c4;
+    text-indent: 1em;
+    width: -webkit-fill-available;
+}
+
+.time {
+    margin: auto 0.5em 0;
+    font-size: 10px;
+}
+
+.time--user {
+    font-size: 10px;
+}

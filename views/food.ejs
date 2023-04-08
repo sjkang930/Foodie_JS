@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>FoodieShare</title>
+
+    <link rel="stylesheet" href="/new_post.css">
+    <link rel="stylesheet" href="/posts.css">
+    <link rel="stylesheet" href="/food.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section id="container">
+        <header id="header">
+            <section class="h_inner">
+                <h1 class="logo">
+                    <a href="/posts"> <img class="logoImg" src='https://ifh.cc/g/9qtKfn.png' border='0'></a>
+                </h1>
+            </section>
+        </header>
+
+
+        <% if(!user) {%>
+            <form class="login-form" action="/authentication/login" method="POST">
+                <div class="field">
+                    <input id="email" name="email" placeholder="email">
+                </div>
+                <div class="field">
+                    <input id="password" type="password" name="password" placeholder="password">
+                </div>
+                <button class="login-button" type="submit">Log In</button>
+            </form>
+            New Here?
+            <div class="separator">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            <div class="box">
+                <a href="/authentication/signup">Sign Up</a>
+                <a href="">Forgot Password?</a>
+                <br>
+                <br>
+                <br>
+                <form action="https://www.facebook.com/reg/" method="get">
+                    <button><img
+                            src="https://p7.hiclipart.com/preview/448/137/201/computer-icons-email-facebook-login-bluetie-inc-facebook-icon.jpg"
+                            height="10px" width="10px"> Sign up with Facebook</button>
+                </form>
+                <form
+                    action="https://accounts.google.com/signup/v2/webcreateaccount?continue=http%3A%2F%2Fsupport.google.com%2Faccounts%2Fanswer%2F27441%3Fhl%3Den&hl=en&dsh=S-2012266799%3A1650933417320832&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp"
+                    method="get">
+                    <button><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"
+                            height="10px" width="10px"> Sign up with Google</button>
+                    <br>
+                </form>
+                <form action="https://appleid.apple.com/account" method="get">
+                    <button><img
+                            src="data:image/jpeg;base64,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"
+                            height="10px" width="10px"> Sign Up with Apple</button>
+                    <br>
+                </form>
+            </div>
+            </div>
+            <% } %>
+                <div class="back-div">
+                    <a class="back-atag" href="/posts/location">
+                        <img class="backbtn" src="/icons/back button.svg"></a>
+                </div>
+               
+                
+                <div class="paragraph">
+                    <div class="RestInfoDiv">  
+                    </div>
+                   
+                    <li class="restaurant-info">
+                        <div class="forIdDiv" hidden><%=id%></div>
+                    </li>
+
+                    <div class="orderIcon">
+                    <div>Order Now</div>
+                    <p class="icon-paragraph"><a href="https://www.skipthedishes.com/"><img class="nav-icon" src="/icons/skip the dishes logo.svg"></a><a href="https://www.doordash.com/"><img
+                            class="nav-icon" src="/icons/doordash logo.svg"></a><a href="https://www.ubereats.com/ca"><img class="nav-icon"
+                            src="/icons/uber eats logo.svg"></a></p>
+                    </div>
+                </div>
+
+                <nav class="bottom-nav">
+
+                    <a class="nav-btn" href="/posts">
+                        <img class="nav-icon" src="/icons/home.svg">
+                    </a>
+
+                    <a class="nav-btn" href="/posts/location">
+                        <img class="nav-icon" src="/icons/locationicon.svg">
+                    </a>
+
+                    <a class="nav-btn" href="/posts/create">
+                        <img class="nav-icon" src="/icons/post-new.svg">
+                    </a>
+
+                    <a class="nav-btn" href="/chat">
+                        <img class="nav-icon" src="/icons/txt.svg">
+                    </a>
+
+                    <a class="nav-btn" href="/profile/<%=user.user_id%>">
+                        <img class="nav-icon" src="/icons/profile.svg">
+                    </a>
+
+                    <div class="horizontal-underline"></div>
+
+                </nav>
+
+    </section>
+    <script>
+        // const contents = document.querySelector('div.contents_box')
+        // contents.addEventListener('click', (event) => {
+        //     if (event.target.classList.contains("favorite")) {
+        //         if (event.target.classList.contains("liked")) {
+        //             event.target.classList.remove('liked');
+        //             event.target.src = "/icons/heart.svg"
+
+        //         } else {
+        //             event.target.classList.add('liked')
+        //             event.target.src = "/icons/like.svg"
+        //         }
+        //     }
+
+        //     if (event.target.classList.contains("bookmark")) {
+        //         if (event.target.classList.contains("saved")) {
+        //             event.target.classList.remove('saved');
+        //             event.target.src = "/icons/save.svg"
+        //         } else {
+        //             event.target.classList.add('saved');
+        //             event.target.src = "/icons/saved.svg"
+        //         }
+        //     }
+
+        // })
+
+
+        let fileInput = document.querySelector("#id_photo"),
+            button = document.querySelector(".input-file-trigger"),
+            the_return = document.querySelector(".file-return");
+        // Show image
+        fileInput.addEventListener('change', handleImage, false);
+        let canvas = document.getElementById('imageCanvas');
+        let ctx = canvas.getContext('2d');
+        function handleImage(e) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                let img = new Image();
+                // let imgWidth =
+                img.onload = function () {
+                    canvas.width = 377;
+                    canvas.height = 377;
+                    ctx.drawImage(img, -10, 0, 377, 377);
+
+                };
+                img.src = event.target.result;
+                // img.width = img.width*0.5
+                // canvas.height = img.height;
+            };
+            reader.readAsDataURL(e.target.files[0]);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/javascript/food.js"></script>
+</body>
+
+</html>

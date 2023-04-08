@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <title>FoodieShare</title>
+</head>
+
+<header id="header">
+    <section class="inner">
+        <h1 class="logo-signup">
+        <% if(user) { %> 
+        <a href="/posts"><img class="wordlogotwo" src='/icons/wordmark.svg' border='0'></a> 
+        <% } else { %>
+            <img class="wordlogotwo" src='/icons/wordmark.svg' border='0'>
+        <% } %>
+      </h1>
+    </section>
+  </header>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            <div class="heading">
+                <img class="logo_burger" src="/icons/logo_burger.svg">
+                <img class="wordmark" src="/icons/wordmark.svg">
+            </div>
+            <% if(!user) {%> 
+            <div class="form-container">
+                <form class="login-form" action="/" method="POST">
+                    <div class="field">
+                        <input class="inputbox" name="first_name" placeholder="First name" required>
+                    </div>
+                    <div class="field">
+                        <input class="inputbox" name="last_name" placeholder="Last name" required>
+
+                    </div>
+                    <div class="field">
+                        <input class="inputbox" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <input class="inputbox" type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button class="login-button" type="submit">Sign Up</button>
+                </form>
+            </div>
+
+
+
+
+            <div class="separator">
+
+                <div class="loginText">Already singed Up?</div>
+
+                <a class="text" href="/authentication/login">Log In</a>
+                
+                
+            </div>
+
+            <div class="box">
+
+            <div class="buttons">
+                <br>
+
+                <form action="#" method="get">
+                    <img src="/icons/facebook.svg">
+                </form>
+
+                <form
+                    action="#"
+                    method="get">
+                    <img src="/icons/google.svg">
+                    <br>
+                </form>
+                <form action="#" method="get">
+                    <img src="/icons/apple.svg">
+                    <br>
+                </form>
+            </div>
+        </div>
+        <% } %> 
+        <% if (user) {%>  
+            <div class="welcome"> Hello <%= user.first_name %> ! </div>
+            <form class="login-form" action="/authentication/logout" method="POST">   
+                  <button class="logout" type="submit">Log Out</button>
+              </form>
+          <%  } %> 
+</body>
+
+</html>

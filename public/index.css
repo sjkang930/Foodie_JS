@@ -1,0 +1,28 @@
+/* body {
+    background-color: rgb(182, 194, 201);
+}
+
+#nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+} */
+
+article {
+    position: relative;
+}
+
+.map-div {
+    height: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em; 
+}
+.map-icon {
+    position: absolute;
+    top: 60%;
+}

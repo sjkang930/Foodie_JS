@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+}
+
+#header .inner {
+  height: 5em;
+}
+
+body {
+  font-family: "nunito", sans-serif;
+  background: url("/icons/background gradient.png");
+  box-sizing: border-box;
+}
+
+svg#Layer_1 {
+  width: 200;
+  height: 200;
+}
+
+.logoImg {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #00BFB2; */
+  /* border: 1px solid #e6e6e6; */
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  flex-grow: 1;
+}
+
+.container {
+  /* background-color: #00BFB2; */
+  max-width: 600px;
+  /* height: 100vh; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.wordmark {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+img.logo_burger {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.heading {
+  margin: 22px auto 12px;
+  background-image: url(../foodieshare_logo.png);
+  background-position: -98px 0;
+  width: 177px;
+  overflow: hidden;
+}
+
+/* .login-form ::-moz-placeholder { */
+/* color: transparent; */
+
+/* } */
+.inputbox {
+  width: 315px;
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid rgba(10, 37, 39, 0.75);
+  opacity: 75%;
+  font: 16px "Nunito", sans-serif;
+}
+
+.field {
+  margin: 10px 0;
+  position: relative;
+  font-size: 14px;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.login-button {
+  text-align: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #1a5e63;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginText {
+  width: 10em;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: left; */
+  color: white;
+  font: 16px "Nunito", sans-serif;
+  margin-top: 10px;
+  opacity: 80%;
+  position: relative;
+  left: -80px;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.separator {
+  height: 1px;
+  width: 40%;
+  color: white;
+  font: bold 16px "Nunito", sans-serif;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.logout {
+  text-align: center;
+  margin-top: 10px;
+  width: 315px;
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #1a5e63;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.welcome {
+  color: white;
+  font: bold 24px "Nunito", sans-serif;
+}
+
+.reset {
+  position: relative;
+  text-align: center;
+  left: 5.5em;
+  bottom: 1.5em;
+}
+
+.signup {
+  position: relative;
+  top: 1.4em;
+  opacity: 100%;
+  left: -5.2em;
+}
+
+.logo-signup {
+  
+  margin-left: 7.1em;
+}
+
+.wordlogo {
+  width: 100%;
+  height: 3em;
+}
+
+.wordlogotwo {
+  width: 100%;
+  margin-left: -3em;
+  height: 3em;
+  margin-top: 1em;
+}
+
+.logo-login {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+.text {
+  margin-left: -5em;
+}
+
+.logoword {
+  width: 80%;
+  margin-left: 10%;
+  height: 3em;
+}

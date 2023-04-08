@@ -1,0 +1,34 @@
+{
+  "name": "IDSP_Foodie",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "aws-sdk": "^2.1125.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.18.0",
+    "express-fileupload": "^1.3.1",
+    "http-proxy-middleware": "^2.0.6",
+    "moment": "^2.29.3",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "node-fetch": "^2.6.7",
+    "socket.io": "^4.5.0",
+    "yelp-api": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+}
+.title {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font: Nunito Sans;
+}
+
+.submit_btn {
+  background: #00bfb2;
+  border-color: #00bfb2;
+  color: #fff;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  outline: none;
+  width: 315px;
+  height: 53px;
+  padding: 0;
+  margin-top: 10px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.user-info {
+  color: #1a5e63;
+}
+.user-info.bio {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.name-profile.username {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+span .submit {
+  background: #00bfb2;
+  border-color: #00bfb2;
+  color: #fff;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: 600;
+  width: 215px;
+  height: 53px;
+  position: relative;
+  margin: 10px;
+}
+span .new.follow {
+  background: #00bfb2;
+  border-color: #00bfb2;
+  color: #fff;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: 600;
+  width: 215px;
+  height: 53px;
+  position: relative;
+}
+span .new.follow.following {
+  background: #fff;
+  border-color: #00bfb2;
+  color: #00bfb2;
+  border-radius: 8px;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: 600;
+  width: 215px;
+  height: 53px;
+  position: relative;
+}
+
+div.input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.each-posts {
+  text-align: left;
+}
+
+img.userPost {
+  width: 29%;
+  margin: 6px;
+}

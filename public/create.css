@@ -1,0 +1,25 @@
+body {
+  background: #f8f8f8;
+}
+
+:root {
+  background: linear-gradient(to right, #e2336b, #fcac46);
+}
+
+/* .sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  background: #f8f8f8;
+  z-index: 2;
+} */
+
+main-home {
+  position: absoulte;
+  width: calc(100% -300px);
+  top: 0;
+  left: 300px;
+  background: #fff;
+  border-radius: 1rem 0 0 1rem;
+  z-index: 1000;
+}

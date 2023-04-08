@@ -1,0 +1,140 @@
+.title {
+    /* margin: 0 10px 10px; */
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    font: Nunito Sans;
+}
+
+#map {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0px 3px;
+}
+
+.restaurantName{
+    font-size: 13pt;
+    color: #1A5E63;
+    font: Nunito Sans;
+}
+
+.phone{
+    font-size: 10pt;
+    color: #1A5E63;
+    font: Nunito Sans;
+}
+
+.hours{
+    font-size: 10pt;
+    color: #1A5E63;
+    font: Nunito Sans;
+}
+
+.custom-map-control-button{
+ cursor: pointer;
+}
+
+.list {
+    text-align: center;
+    margin-top: 10px;
+    width: 25em;
+    height: 53px;
+    /* border-radius: 10px; */
+    border: 1px solid transparent;
+    background-color: #00BFB2;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.open {
+    background-color: #9FDBE3;
+    position: relative;
+    width: 25em;
+    height: 150vh;
+    top: 0;
+    overflow: hidden;
+    transition: all 1s;
+    overflow-y: scroll;
+}
+
+.open.close {
+    height: 0;
+    top: 100%;
+}
+
+.slider-container {
+    position: relative;
+}
+
+input.pac-target-input {
+    z-index: 0;
+    position: absolute;
+    top: 11px !important;
+    left: 315px;
+    width: 25em;
+    height: 2.7em;
+    text-indent: 1em;
+    font-size: 14px;
+}
+
+.res_img{
+    width: 30px;
+    height: 30px;
+}
+.RestInfoDiv{
+    text-align: center;
+    padding: 8px;
+    margin: 8px;
+}
+
+.img-img{
+    width: 300px;
+    height: 200px;
+    margin: 7px;
+    justify-content: center;
+}
+
+.resName{
+    color: #1A5E63;
+    font: Nunito Sans;
+    font-size: 12pt;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.rating{
+    color: #1A5E63;
+    font: Nunito Sans;
+    font-weight: 500;
+    /* display: flex;
+    justify-content: center; */
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .stars{
+    display: flex;
+    flex-direction: row;
+
+} */
+
+.review_count{
+    font: Nunito Sans;
+}
+
+.plusIcon {
+    display: block;
+    position: relative;
+    right: -20em;
+    margin: 1em;
+    z-index: 9;
+    top: -2.6em;
+}
